@@ -4,6 +4,7 @@
     <CatImages />
     <Narrative />
     <ChartEmbed :chartUrl="chartUrl" />
+    <MemeGrid />
     <Tokenomics />
     <WarningBox />
   </div>
@@ -14,6 +15,7 @@ import GlitchTitle from './GlitchTitle.vue'
 import CatImages from './CatImages.vue'
 import Narrative from './Narrative.vue'
 import ChartEmbed from './ChartEmbed.vue'
+import MemeGrid from './MemeGrid.vue'
 import Tokenomics from './Tokenomics.vue'
 import WarningBox from './WarningBox.vue'
 
