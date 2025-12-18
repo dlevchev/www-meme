@@ -25,6 +25,26 @@ setInterval(() => {
     }
 }, 3000);
 
+// Random color inversion
+setInterval(() => {
+    if (Math.random() > 0.92) {
+        document.body.style.filter = 'invert(1) hue-rotate(180deg)';
+        setTimeout(() => {
+            document.body.style.filter = 'none';
+        }, 150);
+    }
+}, 4000);
+
+// Random saturation blast
+setInterval(() => {
+    if (Math.random() > 0.88) {
+        document.body.style.filter = 'saturate(' + (Math.random() * 5 + 2) + ')';
+        setTimeout(() => {
+            document.body.style.filter = 'none';
+        }, 200);
+    }
+}, 3500);
+
 // Random cursor: not-allowed
 document.addEventListener('mousemove', () => {
     if (Math.random() > 0.95) {
@@ -39,7 +59,7 @@ document.addEventListener('mousemove', () => {
 console.log('%c$WWW - WHAT WENT WRONG', 'font-size: 40px; color: #ff00de; font-weight: bold; text-shadow: 2px 2px #00ffff;');
 console.log('%cYou really thought there would be alpha in the console?', 'font-size: 16px; color: #fff;');
 console.log('%cEverything is broken. Including your hopes and dreams.', 'font-size: 14px; color: #ff0000;');
-console.log('%cCA: 4JMZpg1GUgTLDHmdHopDrUTyurkSR5CWdQAHkjC6m8Zf', 'font-size: 12px; color: #00ff00;');
+console.log('%cCA: o17wagNy32TdNbL8PEeDdH3MJHFHR1e2AtHupM9pump', 'font-size: 12px; color: #00ff00;');
 
 // Random page title changes
 const titles = [
